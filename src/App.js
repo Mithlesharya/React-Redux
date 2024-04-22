@@ -3,14 +3,18 @@ import "./App.css";
 import { textContext } from "./contextapi/TextContext";
 import Context from "./pages/Context";
 
+import HomeContainer from './containers/HomeContainer'
+import NavbarContainer from './containers/NavbarContainer'
 
 function App() {
   const [text, setText] = useState("");
   return (
     <>
-      <textContext.Provider value ={{text, setText}}>
+      {/* <textContext.Provider value ={{text, setText}}>
         <Context/>
-      </textContext.Provider>
+      </textContext.Provider> */}
+      <NavbarContainer/>
+      <HomeContainer/>
     </>
   );
 }
